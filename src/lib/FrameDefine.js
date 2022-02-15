@@ -1,0 +1,40 @@
+let FrameDefine = {
+	LGS_CS_CMD:{
+		LGS_CS_LOGIN:0,//登录
+		LGS_CS_LOGOUT:1,//退出
+		LGS_CS_JOINGAME:2,//加入游戏
+		LGS_CS_LEAVEGAME:3,//退出游戏
+		LGS_CS_GAME:4,//游戏消息
+		LGS_CS_MEXCHANGE:5,//钻石兑换
+	},
+	LGS_SC_CMD:{
+		LGS_SC_LOGIN:0,//登录
+		LGS_SC_LOGOUT:1,//退出
+		LGS_SC_JOINGAME:2,//加入游戏
+		LGS_SC_LEAVEGAME:3,//退出游戏
+		LGS_SC_GAME:4,//游戏消息
+		LGS_SC_MEXCHANGE:5,//钻石兑换
+		LGS_SC_MC:6,//玩家金币变更
+	},
+	BANK_TYPE:{
+		BANK:0,
+		ALIPAY:1
+	},
+	MEXCHANGE_ERROR:{
+		MEXCHANGE_E_OK:0,
+		MEXCHANGE_E_UNKNOWN:1,
+		MEXCHANGE_E_INVALIDUSER:2,//用户不存在
+		MEXCHANGE_E_INVALIDTYPE:3,//无效的兑换类型
+		MEXCHANGE_E_INVALIDMONEY:4,//无效的兑换额度
+		MEXCHANGE_E_INVALIDCONTENT:5,//无效的兑换信息
+		MEXCHANGE_E_NOMONEY:6,//金币不足
+	},
+	MONEY_TYPE:{
+		MONEY_T_CM:0,//钻石
+		MONEY_T_TM:1,//代币
+		MONEY_T_LM:2,//魅力币
+		MONEY_T_TEST:3,//测试币
+		MONEY_T_MAX:4
+	}
+}
+export default FrameDefine;
